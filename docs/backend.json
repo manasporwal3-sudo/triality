@@ -1,0 +1,217 @@
+
+{
+  "entities": {
+    "User": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "User",
+      "type": "object",
+      "description": "Represents a user of the Bhartiya Swad platform.",
+      "properties": {
+        "id": { "type": "string" },
+        "uid": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "name": { "type": "string" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string" },
+        "totalOrders": { "type": "number" },
+        "totalSpent": { "type": "number" },
+        "address": { "type": "string" },
+        "phone": { "type": "string" },
+        "fcmToken": { "type": "string", "description": "Firebase Cloud Messaging token for push notifications." },
+        "createdAt": { "type": "object" },
+        "lastLogin": { "type": "object" }
+      },
+      "required": ["uid", "email", "name", "role"]
+    },
+    "Dish": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Dish",
+      "type": "object",
+      "description": "Represents an authentic Indian dish.",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "type": "number" },
+        "image": { "type": "string", "format": "uri" },
+        "rating": { "type": "number" },
+        "category": { "type": "string" },
+        "isVeg": { "type": "boolean" },
+        "totalOrders": { "type": "number" },
+        "totalRevenue": { "type": "number" },
+        "restaurantId": { "type": "string" }
+      },
+      "required": ["name", "price", "category"]
+    },
+    "CartItem": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "CartItem",
+      "type": "object",
+      "description": "Represents an item in a user's shopping cart or order.",
+      "properties": {
+        "dishId": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "quantity": { "type": "number" },
+        "imageURL": { "type": "string", "format": "uri" }
+      },
+      "required": ["name", "price", "quantity"]
+    },
+    "Order": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Order",
+      "type": "object",
+      "description": "Represents a customer order.",
+      "properties": {
+        "orderId": { "type": "string" },
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "items": { "type": "array", "items": { "$ref": "#/entities/CartItem" } },
+        "totalAmount": { "type": "number" },
+        "status": { "type": "string", "enum": ["placed", "preparing", "out_for_delivery", "delivered", "cancelled"] },
+        "paymentMethod": { "type": "string" },
+        "paymentStatus": { "type": "string", "enum": ["pending", "paid", "refunded"] },
+        "isCancelled": { "type": "boolean" },
+        "cancelledAt": { "type": "object" },
+        "refundInitiated": { "type": "boolean" },
+        "refundInitiatedAt": { "type": "object" },
+        "refundCompleted": { "type": "boolean" },
+        "deliveryDetails": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "phone": { "type": "string" },
+            "address": { "type": "string" }
+          }
+        },
+        "isRated": { "type": "boolean" },
+        "ratings": {
+          "type": "object",
+          "properties": {
+            "taste": { "type": "number" },
+            "packaging": { "type": "number" },
+            "delivery": { "type": "number" }
+          }
+        },
+        "reviewText": { "type": "string" },
+        "ratedAt": { "type": "object" },
+        "createdAt": { "type": "object" }
+      },
+      "required": ["userId", "items", "totalAmount", "status", "createdAt"]
+    },
+    "Notification": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Notification",
+      "type": "object",
+      "description": "Represents a real-time notification for a user.",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "message": { "type": "string" },
+        "type": { "type": "string", "enum": ["order", "system", "ai"] },
+        "read": { "type": "boolean" },
+        "createdAt": { "type": "object" }
+      },
+      "required": ["userId", "message", "read", "createdAt"]
+    },
+    "AdminNotification": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "AdminNotification",
+      "type": "object",
+      "description": "Represents a real-time notification for system administrators.",
+      "properties": {
+        "id": { "type": "string" },
+        "message": { "type": "string" },
+        "type": { "type": "string", "enum": ["support", "order", "system"] },
+        "read": { "type": "boolean" },
+        "createdAt": { "type": "object" }
+      },
+      "required": ["message", "read", "createdAt"]
+    },
+    "SupportTicket": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "SupportTicket",
+      "type": "object",
+      "description": "Represents a customer support inquiry.",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string", "description": "UID of the user who created the ticket." },
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "message": { "type": "string" },
+        "status": { "type": "string", "enum": ["open", "resolved"] },
+        "replies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sender": { "type": "string", "enum": ["user", "admin"] },
+              "text": { "type": "string" },
+              "createdAt": { "type": "object" }
+            }
+          }
+        },
+        "createdAt": { "type": "object" },
+        "resolvedAt": { "type": "object", "description": "Timestamp when the ticket was resolved." },
+        "resolvedBy": { "type": "string", "description": "UID of the admin who resolved the ticket." }
+      },
+      "required": ["name", "email", "message", "createdAt"]
+    },
+    "Favorite": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Favorite",
+      "type": "object",
+      "description": "Represents a user's favorite dish.",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "dishId": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "image": { "type": "string", "format": "uri" },
+        "category": { "type": "string" },
+        "rating": { "type": "number" },
+        "isVeg": { "type": "boolean" },
+        "createdAt": { "type": "object" }
+      },
+      "required": ["userId", "dishId", "name", "price", "createdAt"]
+    }
+  },
+  "auth": {
+    "providers": ["password"]
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Stores user profiles."
+    },
+    "/users/{userId}/cart/{itemId}": {
+      "schema": "CartItem",
+      "description": "Stores items in a user's active shopping cart."
+    },
+    "/dishes/{dishId}": {
+      "schema": "Dish",
+      "description": "Stores individual authentic Indian dishes."
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Stores all customer orders."
+    },
+    "/notifications/{notificationId}": {
+      "schema": "Notification",
+      "description": "Stores user notifications."
+    },
+    "/notifications_admin/{notificationId}": {
+      "schema": "AdminNotification",
+      "description": "Stores administrator notifications."
+    },
+    "/supportTickets/{ticketId}": {
+      "schema": "SupportTicket",
+      "description": "Stores customer inquiries."
+    },
+    "/favorites/{favoriteId}": {
+      "schema": "Favorite",
+      "description": "Stores user favorite dishes."
+    }
+  }
+}

@@ -1,0 +1,115 @@
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- HELPER FUNCTIONS ---
+    
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.admin == true;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // --- COLLECTION RULES ---
+
+    // USER RECOMMENDATIONS: Persisted AI output shared between user and admin
+    match /userRecommendations/{userId} {
+      allow read, write: if isOwner(userId) || isAdmin();
+    }
+
+    // FAVORITES: Users manage their own favorites. 
+    match /favorites/{favId} {
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      // Allow read/delete if user owns the document (ID check for get/delete, Data check for list)
+      allow read: if isSignedIn() && (
+        (resource == null && favId.split('_')[0] == request.auth.uid) ||
+        (resource != null && resource.data.userId == request.auth.uid)
+      );
+      allow update, delete: if isSignedIn() && (
+        (resource != null && resource.data.userId == request.auth.uid) ||
+        (favId.split('_')[0] == request.auth.uid)
+      );
+    }
+
+    // SUPPORT TICKETS: Users can see their own, public can create, admin manages all.
+    match /supportTickets/{ticketId} {
+      allow create: if true;
+      allow read: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow write: if isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // NOTIFICATIONS: Users can only see and manage their own notifications.
+    match /notifications/{notificationId} {
+      allow read, update: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isSignedIn(); 
+      allow delete: if isAdmin();
+    }
+
+    // ADMIN NOTIFICATIONS: Restricted to system admins
+    match /notifications_admin/{notificationId} {
+      allow read, update, delete: if isAdmin();
+      allow create: if true; 
+    }
+
+    // DISHES: Publicly viewable menu items. Admin can manage.
+    match /dishes/{dishId} {
+      allow read: if true;
+      allow create, update: if isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // USER PROFILES: Owners can manage their data, admins can see all.
+    match /users/{userId} {
+      allow get: if isOwner(userId) || isAdmin();
+      allow list: if isAdmin();
+      allow create: if isOwner(userId) && 
+        request.resource.data.uid == request.auth.uid;
+      allow update: if isOwner(userId) || isAdmin();
+      allow delete: if isAdmin();
+
+      // User's Cart: Only the owner can manage their cart
+      match /cart/{itemId} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // ORDERS: Users can create and read/write their own orders. Admins manage all.
+    match /orders/{orderId} {
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow get: if (isSignedIn() && resource.data.userId == request.auth.uid) || isAdmin();
+      allow list: if isAdmin();
+      allow update: if (isSignedIn() && resource.data.userId == request.auth.uid) || isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // ADMIN ROLES: Strictly restricted to system administrators
+    match /admin_roles/{adminId} {
+      allow read, write: if isAdmin();
+    }
+    
+    // RESTAURANTS: Public read, Admin write.
+    match /restaurants/{rId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // PARTNERS: Admin read, Admin write.
+    match /partners/{partnerId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Default deny for any unmatched paths
+    match /{path=**} {
+      allow read, write: if false;
+    }
+  }
+}

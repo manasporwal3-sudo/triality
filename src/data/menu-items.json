@@ -1,0 +1,702 @@
+[
+  {
+    "name": "Classic Margherita Pizza",
+    "category": "Pizza",
+    "description": "The quintessential Italian pizza with hand-crushed tomato sauce, fresh buffalo mozzarella, and organic basil.",
+    "price": 299,
+    "isVeg": true
+  },
+  {
+    "name": "Double Cheese Margherita",
+    "category": "Pizza",
+    "description": "A cheese lover's dream featuring a blend of mozzarella and cheddar for that extra gooey stretch.",
+    "price": 349,
+    "isVeg": true
+  },
+  {
+    "name": "Peri Peri Paneer Pizza",
+    "category": "Pizza",
+    "description": "Zesty peri-peri marinated paneer chunks, bell peppers, and red onions on a spicy tomato base.",
+    "price": 420,
+    "isVeg": true
+  },
+  {
+    "name": "Farmhouse Pizza",
+    "category": "Pizza",
+    "description": "A garden-fresh delight with mushrooms, capsicum, fresh tomatoes, and crunchy onions.",
+    "price": 399,
+    "isVeg": true
+  },
+  {
+    "name": "Mexican Green Wave",
+    "category": "Pizza",
+    "description": "Crunchy onions, capsicum, juicy tomatoes, and jalapeno for a spicy Mexican kick.",
+    "price": 449,
+    "isVeg": true
+  },
+  {
+    "name": "Veg Extravaganza",
+    "category": "Pizza",
+    "description": "Loaded with black olives, onions, capsicum, mushrooms, tomatoes, and golden corn.",
+    "price": 499,
+    "isVeg": true
+  },
+  {
+    "name": "Indi Tandoori Paneer Pizza",
+    "category": "Pizza",
+    "description": "It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with coriander and green chillies.",
+    "price": 449,
+    "isVeg": true
+  },
+  {
+    "name": "Cheese N Corn Pizza",
+    "category": "Pizza",
+    "description": "Simple sweetness of golden corn paired with the rich creaminess of mozzarella.",
+    "price": 310,
+    "isVeg": true
+  },
+  {
+    "name": "Garden Special Pizza",
+    "category": "Pizza",
+    "description": "A healthy mix of zucchini, broccoli, bell peppers, and baby corn on a whole wheat crust.",
+    "price": 460,
+    "isVeg": true
+  },
+  {
+    "name": "Spicy Triple Tango",
+    "category": "Pizza",
+    "description": "Golden corn, red paprika, and jalapeno for three levels of spicy satisfaction.",
+    "price": 380,
+    "isVeg": true
+  },
+  {
+    "name": "Pesto Paneer Pizza",
+    "category": "Pizza",
+    "description": "Gourmet basil pesto sauce base topped with succulent paneer cubes and cherry tomatoes.",
+    "price": 480,
+    "isVeg": true
+  },
+  {
+    "name": "Smoky BBQ Veggie Pizza",
+    "category": "Pizza",
+    "description": "Smoky barbecue sauce topped with caramelized onions, grilled mushrooms, and sweet corn.",
+    "price": 430,
+    "isVeg": true
+  },
+  {
+    "name": "Four Cheese Pizza",
+    "category": "Pizza",
+    "description": "An artisanal blend of Mozzarella, Parmesan, Cheddar, and Feta for ultimate richness.",
+    "price": 520,
+    "isVeg": true
+  },
+  {
+    "name": "Capsicum & Onion Classic",
+    "category": "Pizza",
+    "description": "The timeless duo of fresh green capsicum and red onions on a classic base.",
+    "price": 279,
+    "isVeg": true
+  },
+  {
+    "name": "Paneer Makhani Pizza",
+    "category": "Pizza",
+    "description": "Indian fusion at its best with creamy makhani sauce and marinated paneer pieces.",
+    "price": 459,
+    "isVeg": true
+  },
+  {
+    "name": "Aloo Tikki Delight Burger",
+    "category": "Burger",
+    "description": "Crispy potato patty with a hint of ginger and garlic, topped with liquid cheese and onions.",
+    "price": 99,
+    "isVeg": true
+  },
+  {
+    "name": "Maharaja Veg Burger",
+    "category": "Burger",
+    "description": "Double decker veg patty burger with layers of fresh lettuce, cheese, and spicy mayo.",
+    "price": 220,
+    "isVeg": true
+  },
+  {
+    "name": "Cheese Lava Burger",
+    "category": "Burger",
+    "description": "A patty filled with molten cheese that oozes out with every single bite.",
+    "price": 180,
+    "isVeg": true
+  },
+  {
+    "name": "Spicy Paneer Burger",
+    "category": "Burger",
+    "description": "Fried paneer patty coated in a spicy batter, served with spicy tandoori sauce.",
+    "price": 160,
+    "isVeg": true
+  },
+  {
+    "name": "Crispy Corn Burger",
+    "category": "Burger",
+    "description": "Crunchy corn and cheese patty with a sweet and spicy dressing in toasted buns.",
+    "price": 140,
+    "isVeg": true
+  },
+  {
+    "name": "Mushroom Swiss Veg Burger",
+    "category": "Burger",
+    "description": "Grilled mushroom medley topped with melted Swiss-style cheese and caramelized onions.",
+    "price": 199,
+    "isVeg": true
+  },
+  {
+    "name": "Garden Fresh Burger",
+    "category": "Burger",
+    "description": "A wholesome patty made of peas, carrots, and beans, topped with fresh cucumber and tomato.",
+    "price": 120,
+    "isVeg": true
+  },
+  {
+    "name": "Tandoori Paneer Burger",
+    "category": "Burger",
+    "description": "Paneer cubes marinated in tandoori spices, grilled and served with mint chutney mayo.",
+    "price": 175,
+    "isVeg": true
+  },
+  {
+    "name": "Peri Peri Veg Burger",
+    "category": "Burger",
+    "description": "Classic veg patty seasoned with extra spicy peri-peri powder and spicy mayo.",
+    "price": 130,
+    "isVeg": true
+  },
+  {
+    "name": "Double Decker Veggie Burger",
+    "category": "Burger",
+    "description": "Two crispy veg patties stacked with double cheese and fresh vegetables.",
+    "price": 210,
+    "isVeg": true
+  },
+  {
+    "name": "BBQ Paneer Burger",
+    "category": "Burger",
+    "description": "Grilled paneer steak smothered in smoky BBQ sauce with crunchy slaw.",
+    "price": 185,
+    "isVeg": true
+  },
+  {
+    "name": "Mexican Jalapeno Burger",
+    "category": "Burger",
+    "description": "Veg patty with a spicy jalapeno salsa, nachos, and liquid cheese for a crunch.",
+    "price": 165,
+    "isVeg": true
+  },
+  {
+    "name": "Urban Desi Burger",
+    "category": "Burger",
+    "description": "Indian street style burger with vada-pav inspired flavors and garlic chutney.",
+    "price": 110,
+    "isVeg": true
+  },
+  {
+    "name": "Supreme Cheese Burger",
+    "category": "Burger",
+    "description": "Triple cheese layers with a grilled veggie patty and roasted garlic aioli.",
+    "price": 190,
+    "isVeg": true
+  },
+  {
+    "name": "Zesty Lemon Paneer Burger",
+    "category": "Burger",
+    "description": "Paneer marinated in lemon and herbs, served with a citrusy dressing and lettuce.",
+    "price": 170,
+    "isVeg": true
+  },
+  {
+    "name": "Paneer Butter Masala",
+    "category": "North Indian",
+    "description": "Soft paneer cubes simmered in a rich, creamy tomato and cashew-based gravy.",
+    "price": 320,
+    "isVeg": true
+  },
+  {
+    "name": "Dal Makhani",
+    "category": "North Indian",
+    "description": "Black lentils slow-cooked overnight with cream and butter for a silky texture.",
+    "price": 280,
+    "isVeg": true
+  },
+  {
+    "name": "Shahi Paneer",
+    "category": "North Indian",
+    "description": "A royal preparation of paneer in a white creamy gravy with nuts and saffron.",
+    "price": 340,
+    "isVeg": true
+  },
+  {
+    "name": "Kadai Paneer",
+    "category": "North Indian",
+    "description": "Paneer cooked with bell peppers and freshly ground spices in a traditional wok.",
+    "price": 310,
+    "isVeg": true
+  },
+  {
+    "name": "Malai Kofta",
+    "category": "North Indian",
+    "description": "Fried potato and paneer dumplings served in a smooth, rich golden gravy.",
+    "price": 350,
+    "isVeg": true
+  },
+  {
+    "name": "Mix Vegetable Handi",
+    "category": "North Indian",
+    "description": "A colorful assortment of seasonal vegetables cooked in a spicy onion-tomato masala.",
+    "price": 260,
+    "isVeg": true
+  },
+  {
+    "name": "Palak Paneer",
+    "category": "North Indian",
+    "description": "Nutritious spinach puree cooked with paneer chunks and a touch of cream.",
+    "price": 300,
+    "isVeg": true
+  },
+  {
+    "name": "Chole Masala",
+    "category": "North Indian",
+    "description": "Tangy and spicy chickpeas cooked in a robust blend of Punjabi spices.",
+    "price": 240,
+    "isVeg": true
+  },
+  {
+    "name": "Rajma Masala",
+    "category": "North Indian",
+    "description": "Comforting kidney beans cooked in a thick tomato gravy, perfect with steamed rice.",
+    "price": 240,
+    "isVeg": true
+  },
+  {
+    "name": "Baingan Bharta",
+    "category": "North Indian",
+    "description": "Smoky roasted eggplant mashed and sautéed with peas, onions, and tomatoes.",
+    "price": 220,
+    "isVeg": true
+  },
+  {
+    "name": "Aloo Gobi Adraki",
+    "category": "North Indian",
+    "description": "Potatoes and cauliflower tossed with fresh ginger and aromatic dry spices.",
+    "price": 200,
+    "isVeg": true
+  },
+  {
+    "name": "Bhindi Do Pyaza",
+    "category": "North Indian",
+    "description": "Okra cooked with double the amount of onions and a tangy masala mix.",
+    "price": 230,
+    "isVeg": true
+  },
+  {
+    "name": "Dum Aloo Punjabi",
+    "category": "North Indian",
+    "description": "Baby potatoes deep fried and slow cooked in a rich, spicy yogurt-based gravy.",
+    "price": 270,
+    "isVeg": true
+  },
+  {
+    "name": "Matar Paneer",
+    "category": "North Indian",
+    "description": "Classic pairing of tender green peas and paneer in a home-style tomato gravy.",
+    "price": 290,
+    "isVeg": true
+  },
+  {
+    "name": "Navratan Korma",
+    "category": "North Indian",
+    "description": "Nine types of vegetables and fruits cooked in a mild, sweet, and nutty gravy.",
+    "price": 360,
+    "isVeg": true
+  },
+  {
+    "name": "Butter Chicken",
+    "category": "North Indian",
+    "description": "Tandoori chicken pieces simmered in a velvety smooth tomato, butter, and cream sauce.",
+    "price": 380,
+    "isVeg": false
+  },
+  {
+    "name": "Chicken Tikka Masala",
+    "category": "North Indian",
+    "description": "Roasted marinated chicken chunks in a spiced, creamy, and orange-colored sauce.",
+    "price": 360,
+    "isVeg": false
+  },
+  {
+    "name": "Mutton Rogan Josh",
+    "category": "North Indian",
+    "description": "A Kashmiri delicacy consisting of tender lamb slow-cooked in a red gravy of spices.",
+    "price": 450,
+    "isVeg": false
+  },
+  {
+    "name": "Handi Chicken",
+    "category": "North Indian",
+    "description": "Chicken pieces cooked on low flame in an earthen pot with traditional spices.",
+    "price": 370,
+    "isVeg": false
+  },
+  {
+    "name": "Chicken Lababdar",
+    "category": "North Indian",
+    "description": "Succulent chicken cooked in a rich, nutty, and slightly sweet tomato-based gravy.",
+    "price": 390,
+    "isVeg": false
+  },
+  {
+    "name": "Mutton Rara",
+    "category": "North Indian",
+    "description": "A unique blend of mutton pieces and minced mutton cooked together in a spicy gravy.",
+    "price": 480,
+    "isVeg": false
+  },
+  {
+    "name": "Chicken Bhuna",
+    "category": "North Indian",
+    "description": "Chicken pieces pan-fried with spices and onions until dark and flavorful.",
+    "price": 350,
+    "isVeg": false
+  },
+  {
+    "name": "Egg Curry",
+    "category": "North Indian",
+    "description": "Boiled eggs cooked in a spicy and aromatic onion-tomato based gravy.",
+    "price": 220,
+    "isVeg": false
+  },
+  {
+    "name": "Tandoori Chicken Full",
+    "category": "North Indian",
+    "description": "Whole chicken marinated in yogurt and spices, roasted to perfection in a tandoor.",
+    "price": 550,
+    "isVeg": false
+  },
+  {
+    "name": "Chicken Reshmi Kebab",
+    "category": "North Indian",
+    "description": "Silky smooth chicken skewers marinated in cream, cheese, and mild spices.",
+    "price": 340,
+    "isVeg": false
+  },
+  {
+    "name": "Mutton Seekh Kebab",
+    "category": "North Indian",
+    "description": "Spiced minced mutton skewers grilled over charcoal for a smoky flavor.",
+    "price": 400,
+    "isVeg": false
+  },
+  {
+    "name": "Chicken Seekh Kebab",
+    "category": "North Indian",
+    "description": "Finely minced chicken flavored with coriander and spices, grilled in a tandoor.",
+    "price": 320,
+    "isVeg": false
+  },
+  {
+    "name": "Fish Tikka",
+    "category": "North Indian",
+    "description": "Boneless fish chunks marinated in carom seeds and yogurt, grilled until tender.",
+    "price": 420,
+    "isVeg": false
+  },
+  {
+    "name": "Chicken Afghan Curry",
+    "category": "North Indian",
+    "description": "Creamy and mild chicken preparation with dried fruits and a hint of cardamom.",
+    "price": 380,
+    "isVeg": false
+  },
+  {
+    "name": "Lucknowi Tarkari Biryani",
+    "category": "North Indian",
+    "description": "Fragrant basmati rice cooked with seasonal vegetables and saffron in Awadhi style.",
+    "price": 310,
+    "isVeg": true
+  },
+  {
+    "name": "Classic Plain Dosa",
+    "category": "South Indian",
+    "description": "Golden, thin, and crispy fermented rice and lentil crepe served with sambar and chutney.",
+    "price": 120,
+    "isVeg": true
+  },
+  {
+    "name": "Masala Dosa",
+    "category": "South Indian",
+    "description": "A crisp dosa stuffed with a savory, spiced potato and onion filling.",
+    "price": 150,
+    "isVeg": true
+  },
+  {
+    "name": "Mysore Masala Dosa",
+    "category": "South Indian",
+    "description": "A spicy version of masala dosa with a layer of red garlic chutney on the inside.",
+    "price": 170,
+    "isVeg": true
+  },
+  {
+    "name": "Rava Masala Dosa",
+    "category": "South Indian",
+    "description": "Thin and lacy crepe made from semolina, stuffed with spiced potatoes.",
+    "price": 160,
+    "isVeg": true
+  },
+  {
+    "name": "Onion Uttapam",
+    "category": "South Indian",
+    "description": "Thick rice and lentil pancake topped with a generous amount of chopped onions.",
+    "price": 140,
+    "isVeg": true
+  },
+  {
+    "name": "Idli Sambhar",
+    "category": "South Indian",
+    "description": "Soft and fluffy steamed rice cakes served with aromatic lentil stew.",
+    "price": 90,
+    "isVeg": true
+  },
+  {
+    "name": "Medu Vada",
+    "category": "South Indian",
+    "description": "Crispy deep-fried lentil donuts served with coconut chutney and sambar.",
+    "price": 110,
+    "isVeg": true
+  },
+  {
+    "name": "Ghee Roast Paper Dosa",
+    "category": "South Indian",
+    "description": "Extra thin and long dosa roasted with pure desi ghee for an aromatic crunch.",
+    "price": 180,
+    "isVeg": true
+  },
+  {
+    "name": "Paneer Masala Dosa",
+    "category": "South Indian",
+    "description": "Dosa stuffed with a spicy and creamy paneer scramble.",
+    "price": 190,
+    "isVeg": true
+  },
+  {
+    "name": "Cheese Chili Dosa",
+    "category": "South Indian",
+    "description": "Indo-fusion dosa loaded with melted mozzarella and spicy green chillies.",
+    "price": 185,
+    "isVeg": true
+  },
+  {
+    "name": "Set Dosa",
+    "category": "South Indian",
+    "description": "A set of three small, soft, and spongy dosas served with vegetable korma.",
+    "price": 130,
+    "isVeg": true
+  },
+  {
+    "name": "Podi Idli",
+    "category": "South Indian",
+    "description": "Mini idlis tossed in a spicy gunpowder (podi) and ghee mixture.",
+    "price": 140,
+    "isVeg": true
+  },
+  {
+    "name": "Mixed Veg Uttapam",
+    "category": "South Indian",
+    "description": "Healthy pancake topped with peas, carrots, tomatoes, and cilantro.",
+    "price": 155,
+    "isVeg": true
+  },
+  {
+    "name": "Butter Masala Dosa",
+    "category": "South Indian",
+    "description": "A crisp dosa roasted with Amul butter and filled with potato masala.",
+    "price": 175,
+    "isVeg": true
+  },
+  {
+    "name": "Tomato Onion Uttapam",
+    "category": "South Indian",
+    "description": "Classic thick pancake topped with tangy tomatoes and sweet onions.",
+    "price": 145,
+    "isVeg": true
+  },
+  {
+    "name": "Vanilla Classic Scoop",
+    "category": "Ice Cream",
+    "description": "Simple yet heavenly vanilla bean ice cream made with real extract.",
+    "price": 80,
+    "isVeg": true
+  },
+  {
+    "name": "Belgian Chocolate Bliss",
+    "category": "Ice Cream",
+    "description": "Rich and dark chocolate ice cream crafted with the finest cocoa.",
+    "price": 120,
+    "isVeg": true
+  },
+  {
+    "name": "Alphonso Mango Magic",
+    "category": "Ice Cream",
+    "description": "Seasonal special made with pure pulp of hand-picked Alphonso mangoes.",
+    "price": 110,
+    "isVeg": true
+  },
+  {
+    "name": "Kesar Pista Royal",
+    "category": "Ice Cream",
+    "description": "Traditional Indian flavor with saffron strands and crunchy pistachios.",
+    "price": 130,
+    "isVeg": true
+  },
+  {
+    "name": "Butterscotch Crunch",
+    "category": "Ice Cream",
+    "description": "Creamy caramel flavored ice cream with crunchy butterscotch praline.",
+    "price": 100,
+    "isVeg": true
+  },
+  {
+    "name": "Strawberry Ripple",
+    "category": "Ice Cream",
+    "description": "Sweet strawberry ice cream with a tangy berry swirl throughout.",
+    "price": 95,
+    "isVeg": true
+  },
+  {
+    "name": "Black Current Splash",
+    "category": "Ice Cream",
+    "description": "Tangy and sweet black currant berries mixed into smooth purple ice cream.",
+    "price": 115,
+    "isVeg": true
+  },
+  {
+    "name": "Cookies N Cream",
+    "category": "Ice Cream",
+    "description": "Vanilla base loaded with chunky bits of dark chocolate sandwich cookies.",
+    "price": 125,
+    "isVeg": true
+  },
+  {
+    "name": "Roasted Almond Delight",
+    "category": "Ice Cream",
+    "description": "Creamy base with generous portions of slow-roasted salty almonds.",
+    "price": 140,
+    "isVeg": true
+  },
+  {
+    "name": "Tutty Fruity Classic",
+    "category": "Ice Cream",
+    "description": "A nostalgic favorite with colorful candied fruits in a mixed fruit base.",
+    "price": 90,
+    "isVeg": true
+  },
+  {
+    "name": "Sitaphal Special",
+    "category": "Ice Cream",
+    "description": "Unique custard apple flavored ice cream with real fruit pulp.",
+    "price": 150,
+    "isVeg": true
+  },
+  {
+    "name": "Royal Paan Ice Cream",
+    "category": "Ice Cream",
+    "description": "A refreshing after-meal treat with gulkand, betel leaves, and fennel seeds.",
+    "price": 135,
+    "isVeg": true
+  },
+  {
+    "name": "Double Choco Chip",
+    "category": "Ice Cream",
+    "description": "Chocolate ice cream with an explosion of dark and milk chocolate chips.",
+    "price": 110,
+    "isVeg": true
+  },
+  {
+    "name": "Fig and Honey",
+    "category": "Ice Cream",
+    "description": "Naturally sweet dried figs paired with a swirl of organic honey.",
+    "price": 145,
+    "isVeg": true
+  },
+  {
+    "name": "Shahi Rajbhog",
+    "category": "Ice Cream",
+    "description": "Rich traditional flavor with dry fruits, saffron, and small rasgulla bits.",
+    "price": 160,
+    "isVeg": true
+  },
+  {
+    "name": "Sweet Traditional Lassi",
+    "category": "Beverages",
+    "description": "Thick and creamy yogurt drink served in a traditional style with a layer of malai.",
+    "price": 80,
+    "isVeg": true
+  },
+  {
+    "name": "Mango Lassi Splash",
+    "category": "Beverages",
+    "description": "Refreshing yogurt blend with sweet Alphonso mangoes and cardamom.",
+    "price": 100,
+    "isVeg": true
+  },
+  {
+    "name": "Masala Buttermilk",
+    "category": "Beverages",
+    "description": "Light and refreshing savory yogurt drink with ginger, green chili, and roasted cumin.",
+    "price": 50,
+    "isVeg": true
+  },
+  {
+    "name": "Cold Coffee with Ice Cream",
+    "category": "Beverages",
+    "description": "Double shot of espresso blended with milk and topped with a scoop of vanilla.",
+    "price": 150,
+    "isVeg": true
+  },
+  {
+    "name": "Fresh Lime Soda",
+    "category": "Beverages",
+    "description": "Tangy lime juice with your choice of salt, sugar, or both in sparkling soda.",
+    "price": 70,
+    "isVeg": true
+  },
+  {
+    "name": "Virgin Mint Mojito",
+    "category": "Beverages",
+    "description": "Cooling drink with fresh mint leaves, lime chunks, sugar, and fizzy soda.",
+    "price": 130,
+    "isVeg": true
+  },
+  {
+    "name": "Adrak Wali Masala Chai",
+    "category": "Beverages",
+    "description": "Strong Indian tea brewed with milk, fresh ginger, and secret cardamom spices.",
+    "price": 40,
+    "isVeg": true
+  },
+  {
+    "name": "South Indian Filter Coffee",
+    "category": "Beverages",
+    "description": "Traditional decoction-based coffee served with frothy hot milk.",
+    "price": 60,
+    "isVeg": true
+  },
+  {
+    "name": "Rich Hot Chocolate",
+    "category": "Beverages",
+    "description": "Warm and comforting drink made with melted dark chocolate and steamed milk.",
+    "price": 140,
+    "isVeg": true
+  },
+  {
+    "name": "Strawberry Milkshake",
+    "category": "Beverages",
+    "description": "Thick shake made with fresh strawberries and creamy vanilla ice cream.",
+    "price": 120,
+    "isVeg": true
+  }
+]

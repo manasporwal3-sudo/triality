@@ -1,0 +1,103 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 24 60% 96%;
+  --foreground: 22 91% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 22 91% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 22 91% 10%;
+  --primary: 22 91% 47%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 24 30% 90%;
+  --secondary-foreground: 22 91% 20%;
+  --muted: 24 20% 92%;
+  --muted-foreground: 22 20% 40%;
+  --accent: 345 90% 41%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 22 20% 88%;
+  --input: 22 20% 88%;
+  --ring: 22 91% 47%;
+  --radius: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body overflow-x-hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline font-bold;
+  }
+}
+
+@layer components {
+  .btn-premium {
+    @apply transition-all duration-300 active:scale-95 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5;
+  }
+  
+  .card-premium {
+    @apply transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-2;
+  }
+}
+
+/* Advanced Animations */
+@keyframes floatPhysics {
+  0% { transform: translate3d(0px, 0px, 0) rotate(0deg); }
+  20% { transform: translate3d(8px, -12px, 0) rotate(2deg); }
+  40% { transform: translate3d(-6px, -22px, 0) rotate(-3deg); }
+  60% { transform: translate3d(10px, -18px, 0) rotate(3deg); }
+  80% { transform: translate3d(-4px, -10px, 0) rotate(-2deg); }
+  100% { transform: translate3d(0px, 0px, 0) rotate(0deg); }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+.animate-float-complex {
+  animation: floatPhysics 12s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 0.3s ease-out;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.text-gradient-saffron {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#E55C0A] to-[#FF9933];
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}

@@ -1,0 +1,124 @@
+{
+  "placeholderImages": [
+    {
+      "id": "cat-north-indian",
+      "description": "North Indian Cuisine",
+      "imageUrl": "https://picsum.photos/seed/north/400/400",
+      "imageHint": "indian curry"
+    },
+    {
+      "id": "cat-south-indian",
+      "description": "South Indian Cuisine",
+      "imageUrl": "https://picsum.photos/seed/south/400/400",
+      "imageHint": "dosa idli"
+    },
+    {
+      "id": "cat-street-food",
+      "description": "Indian Street Food",
+      "imageUrl": "https://picsum.photos/seed/street/400/400",
+      "imageHint": "chaat samosa"
+    },
+    {
+      "id": "cat-fast-food",
+      "description": "Fast Food",
+      "imageUrl": "https://picsum.photos/seed/fast/400/400",
+      "imageHint": "burger fries"
+    },
+    {
+      "id": "cat-chinese",
+      "description": "Indo-Chinese Cuisine",
+      "imageUrl": "https://picsum.photos/seed/chinese/400/400",
+      "imageHint": "noodles manchurian"
+    },
+    {
+      "id": "cat-biryani",
+      "description": "Authentic Biryani",
+      "imageUrl": "https://picsum.photos/seed/biryani/400/400",
+      "imageHint": "biryani rice"
+    },
+    {
+      "id": "cat-sweets",
+      "description": "Sweets & Desserts",
+      "imageUrl": "https://picsum.photos/seed/sweets/400/400",
+      "imageHint": "indian sweets"
+    },
+    {
+      "id": "cat-beverages",
+      "description": "Beverages",
+      "imageUrl": "https://picsum.photos/seed/drinks/400/400",
+      "imageHint": "lassi tea"
+    },
+    {
+      "id": "cat-pizza",
+      "description": "Pizzas",
+      "imageUrl": "https://picsum.photos/seed/pizza/400/400",
+      "imageHint": "pizza cheese"
+    },
+    {
+      "id": "cat-burgers",
+      "description": "Burgers",
+      "imageUrl": "https://picsum.photos/seed/burger/400/400",
+      "imageHint": "burger"
+    },
+    {
+      "id": "cat-sandwiches",
+      "description": "Sandwiches",
+      "imageUrl": "https://picsum.photos/seed/sandwich/400/400",
+      "imageHint": "sandwich"
+    },
+    {
+      "id": "cat-rolls",
+      "description": "Rolls & Wraps",
+      "imageUrl": "https://picsum.photos/seed/wrap/400/400",
+      "imageHint": "roll wrap"
+    },
+    {
+      "id": "cat-pasta",
+      "description": "Pasta",
+      "imageUrl": "https://picsum.photos/seed/pasta/400/400",
+      "imageHint": "pasta spaghetti"
+    },
+    {
+      "id": "cat-salads",
+      "description": "Salads",
+      "imageUrl": "https://picsum.photos/seed/salad/400/400",
+      "imageHint": "salad healthy"
+    },
+    {
+      "id": "cat-icecream",
+      "description": "Ice Cream",
+      "imageUrl": "https://picsum.photos/seed/icecream/400/400",
+      "imageHint": "ice cream"
+    },
+    {
+      "id": "hero-pizza",
+      "description": "Floating Pizza",
+      "imageUrl": "https://picsum.photos/seed/hpizza/400/400",
+      "imageHint": "pizza"
+    },
+    {
+      "id": "hero-dosa",
+      "description": "Floating Dosa",
+      "imageUrl": "https://picsum.photos/seed/hdosa/400/400",
+      "imageHint": "dosa"
+    },
+    {
+      "id": "hero-burger",
+      "description": "Floating Burger",
+      "imageUrl": "https://picsum.photos/seed/hburger/400/400",
+      "imageHint": "burger"
+    },
+    {
+      "id": "hero-thali",
+      "description": "Floating Thali",
+      "imageUrl": "https://picsum.photos/seed/hthali/400/400",
+      "imageHint": "indian thali"
+    },
+    {
+      "id": "hero-samosa",
+      "description": "Floating Samosa",
+      "imageUrl": "https://picsum.photos/seed/hsamosa/400/400",
+      "imageHint": "samosa"
+    }
+  ]
+}
